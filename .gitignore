@@ -1,2 +1,5 @@
 build/
 .DS_Store
+.impeccable/review/
+.impeccable/sketches/
+.impeccable/hook.cache.json

@@ -1,6 +1,6 @@
 # Little Safari
 
-A Little Arc–style mini window for Safari.
+A Little Arc–style mini window for Safari. **[estevaoam.github.io/little-safari](https://estevaoam.github.io/little-safari/)**
 
 Click a link in Slack, Mail, Notes or any other app, and it opens in a small Safari window on the Space you're
 on, instead of pulling you over to whichever Space your main Safari window lives in. If you want to keep
@@ -16,7 +16,7 @@ Requires macOS 14 or later.
 
 ## Install
 
-1. Download `LittleSafari-<version>.zip` from the
+1. Download `LittleSafari.zip` from the
    [latest release](https://github.com/estevaoam/little-safari/releases/latest), unzip it, and move
    **Little Safari.app** to your **Applications** folder.
 2. Open it. This build isn't signed by Apple, so macOS will block it the first time. Go to

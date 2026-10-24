@@ -1,0 +1,47 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "bounce-easing",
+        "value": "animation: var(--spring)",
+        "createdAt": "2026-10-24T16:37:10.908Z",
+        "reason": "Claude: literal motion; the app's own little-window animation is a spring, and the pop-up world hinges with overshoot"
+      },
+      {
+        "rule": "bounce-easing",
+        "value": "cubic-bezier(0.6, -0.2, 0.3, 1.3)",
+        "createdAt": "2026-10-24T16:37:10.934Z",
+        "reason": "Claude: the deliberate 'yank' in the Without demo, showing macOS pulling you to another Space"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "docs/style.css"
+        ],
+        "createdAt": "2026-10-24T16:37:33.394Z",
+        "reason": "Claude: paper cast shadows with offset and blur on a light coral ground; detector reads coral as a dark page"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "docs/index.html"
+        ],
+        "createdAt": "2026-10-24T16:38:55.543Z",
+        "reason": "Claude: the hero page's pull-tab sticks out of the page edge on purpose and the book pages carry their own padding; verified in 1440 and 390 renders"
+      },
+      {
+        "rule": "nested-cards",
+        "value": "*",
+        "files": [
+          "docs/index.html"
+        ],
+        "createdAt": "2026-10-24T16:38:55.575Z",
+        "reason": "Claude: the only nested containers are the little Safari window standing on the hero page and the sticky note on the install page, both part of the pop-up paper world; verified in renders"
+      }
+    ]
+  }
+}

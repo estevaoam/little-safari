@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-24T12:00:00Z",
+  "title": "Design System: Little Safari",
+  "extensions": {
+    "colorMeta": {
+      "coral": {
+        "role": "primary",
+        "displayName": "Cover Board Coral",
+        "canonical": "#e7563a",
+        "tonalRamp": [
+          "oklch(22% 0.06 36)",
+          "oklch(32% 0.1 36)",
+          "oklch(44% 0.14 36)",
+          "oklch(55% 0.17 36)",
+          "oklch(64% 0.18 36)",
+          "oklch(74% 0.13 36)",
+          "oklch(85% 0.07 36)",
+          "oklch(95% 0.02 36)"
+        ]
+      },
+      "coral-deep": {
+        "role": "primary",
+        "displayName": "Deep Coral",
+        "canonical": "#c9432a",
+        "tonalRamp": [
+          "oklch(20% 0.06 34)",
+          "oklch(30% 0.1 34)",
+          "oklch(40% 0.13 34)",
+          "oklch(52% 0.16 34)",
+          "oklch(62% 0.17 34)",
+          "oklch(73% 0.12 34)",
+          "oklch(84% 0.07 34)",
+          "oklch(95% 0.02 34)"
+        ]
+      },
+      "coral-ink": {
+        "role": "primary",
+        "displayName": "Coral Ink",
+        "canonical": "#3a1209",
+        "tonalRamp": [
+          "oklch(15% 0.04 34)",
+          "oklch(23% 0.06 34)",
+          "oklch(33% 0.08 34)",
+          "oklch(45% 0.1 34)",
+          "oklch(58% 0.1 34)",
+          "oklch(70% 0.08 34)",
+          "oklch(83% 0.05 34)",
+          "oklch(95% 0.015 34)"
+        ]
+      },
+      "blue": {
+        "role": "secondary",
+        "displayName": "Safari Blue",
+        "canonical": "#1f6feb",
+        "tonalRamp": [
+          "oklch(22% 0.08 260)",
+          "oklch(32% 0.13 260)",
+          "oklch(43% 0.17 260)",
+          "oklch(53% 0.2 260)",
+          "oklch(60% 0.2 260)",
+          "oklch(72% 0.13 260)",
+          "oklch(84% 0.07 260)",
+          "oklch(95% 0.02 260)"
+        ]
+      },
+      "blue-press": {
+        "role": "secondary",
+        "displayName": "Blue Press",
+        "canonical": "#1858c4"
+      },
+      "note": {
+        "role": "tertiary",
+        "displayName": "Sticky-Note Yellow",
+        "canonical": "#ffe48f",
+        "tonalRamp": [
+          "oklch(25% 0.05 92)",
+          "oklch(35% 0.07 92)",
+          "oklch(48% 0.1 92)",
+          "oklch(62% 0.13 92)",
+          "oklch(75% 0.14 92)",
+          "oklch(85% 0.13 92)",
+          "oklch(92% 0.11 92)",
+          "oklch(97% 0.04 92)"
+        ]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "Card Stock",
+        "canonical": "#fffdf9"
+      },
+      "card-shade": {
+        "role": "neutral",
+        "displayName": "Card Shade",
+        "canonical": "#f1ebe2"
+      },
+      "fold": {
+        "role": "neutral",
+        "displayName": "Fold",
+        "canonical": "#e4dbcd"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#1d1b19",
+        "tonalRamp": [
+          "oklch(15% 0.005 60)",
+          "oklch(23% 0.006 60)",
+          "oklch(33% 0.008 60)",
+          "oklch(45% 0.012 60)",
+          "oklch(58% 0.014 60)",
+          "oklch(71% 0.014 70)",
+          "oklch(84% 0.014 75)",
+          "oklch(95% 0.01 80)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "canonical": "#5a524a"
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The single white headline across the coral cover."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "One chapter heading per spread, top of the left page."
+      },
+      "title": {
+        "displayName": "Lede",
+        "purpose": "Hero lede in rounded 600; emphasis at 900 in Deep Coral."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, capped at 62ch."
+      },
+      "body-small": {
+        "displayName": "Body small",
+        "purpose": "Flap backs, meta lines, comparison captions."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons; smaller rounded labels (demo steps, comparison labels, Play again, toast) sit at 0.75-1.25rem, 700-800."
+      }
+    },
+    "shadows": [
+      {
+        "name": "spread-rest",
+        "value": "0 1px 1px rgb(72 26 12 / 0.08), 0 14px 28px -12px rgb(72 26 12 / 0.35)",
+        "purpose": "The open spread lying on the coral board."
+      },
+      {
+        "name": "page-stack",
+        "value": "0 30px 50px -24px rgb(72 26 12 / 0.55)",
+        "purpose": "The page beneath the spread, offset 6px."
+      },
+      {
+        "name": "pasted-screen",
+        "value": "0 1px 1px rgb(72 26 12 / 0.1), 0 8px 16px -10px rgb(72 26 12 / 0.45)",
+        "purpose": "The hero screen and comparison viewports pasted on the page; flap fronts use the same family."
+      },
+      {
+        "name": "standing-window",
+        "value": "0 1px 2px rgb(72 26 12 / 0.12), 0 18px 36px -14px rgb(72 26 12 / 0.45)",
+        "purpose": "The popped-up window; paired with a blurred cast plate."
+      },
+      {
+        "name": "ink-button",
+        "value": "0 10px 22px -10px rgb(72 26 12 / 0.8)",
+        "purpose": "Download button lifting off the paper."
+      },
+      {
+        "name": "recess",
+        "value": "inset 0 2px 6px rgb(72 26 12 / 0.12)",
+        "purpose": "The well a flap lifts out of."
+      }
+    ],
+    "motion": [
+      {
+        "name": "spring",
+        "value": "cubic-bezier(0.2, 0.9, 0.25, 1)",
+        "purpose": "Hinges, flaps and check marks; pop-up keyframes fade in over the first 12%, overshoot to -24deg and rest at -10deg (1000ms)."
+      },
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Button lifts, cast shadow fade-in, cursor travel, toast drop-in."
+      },
+      {
+        "name": "fold-flat",
+        "value": "280ms cubic-bezier(0.55, 0, 0.8, 0.4)",
+        "purpose": "Window folding down to rotateX(87deg) while fading to opacity 0."
+      },
+      {
+        "name": "flap-open",
+        "value": "750ms var(--spring)",
+        "purpose": "Flap lid opening to rotateX(-150deg) on its top hinge."
+      },
+      {
+        "name": "space-switch",
+        "value": "900ms cubic-bezier(0.65, 0, 0.35, 1)",
+        "purpose": "The one sanctioned slide: a three-Space track moving like the macOS Space switch."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "single-page",
+        "value": "820px"
+      },
+      {
+        "name": "narrow",
+        "value": "480px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Primary action; every Download for Mac.",
+      "html": "<a class=\"ds-btn-ink\" href=\"#\"><svg viewBox=\"0 0 20 20\" width=\"19\" height=\"19\" aria-hidden=\"true\"><path d=\"M10 3v10m0 0-4-4m4 4 4-4M4 16h12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Download for Mac</a>",
+      "css": ".ds-btn-ink { display: inline-flex; align-items: center; gap: 9px; padding: 14px 22px; border-radius: 999px; background: #1d1b19; color: #fff; font: 800 1.0625rem/1 ui-rounded, 'SF Pro Rounded', 'Nunito Var', system-ui, sans-serif; text-decoration: none; box-shadow: 0 10px 22px -10px rgb(72 26 12 / 0.8); transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1), background-color 150ms; } .ds-btn-ink:hover { background: #000; transform: translateY(-1px); } .ds-btn-ink:active { transform: translateY(1px); } .ds-btn-ink:focus-visible { outline: 3px solid #1f6feb; outline-offset: 3px; }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Secondary action such as View on GitHub.",
+      "html": "<a class=\"ds-btn-quiet\" href=\"#\">View on GitHub</a>",
+      "css": ".ds-btn-quiet { display: inline-flex; align-items: center; gap: 9px; padding: 14px 22px; border-radius: 999px; color: #1d1b19; box-shadow: inset 0 0 0 1.5px rgb(29 27 25 / 0.22); font: 800 1.0625rem/1 ui-rounded, 'SF Pro Rounded', 'Nunito Var', system-ui, sans-serif; text-decoration: none; transition: background-color 150ms; } .ds-btn-quiet:hover { background: #f1ebe2; } .ds-btn-quiet:active { transform: translateY(1px); } .ds-btn-quiet:focus-visible { outline: 3px solid #1f6feb; outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": "blue",
+      "description": "The only use of Safari Blue.",
+      "html": "<p class=\"ds-p\">Download <a class=\"ds-link\" href=\"#\">LittleSafari.zip</a> and unzip it.</p>",
+      "css": ".ds-p { font: 400 1.125rem/1.55 -apple-system, BlinkMacSystemFont, 'Nunito Var', system-ui, sans-serif; color: #1d1b19; } .ds-link { color: #1f6feb; text-underline-offset: 0.18em; text-decoration-thickness: 1.5px; } .ds-link:hover { color: #1858c4; } .ds-link:focus-visible { outline: 3px solid #1f6feb; outline-offset: 3px; border-radius: 8px; }"
+    },
+    {
+      "name": "Play Again Pill",
+      "kind": "button",
+      "refersTo": "replay-pill",
+      "description": "Quiet replay control under each autoplaying demo.",
+      "html": "<button class=\"ds-replay\" type=\"button\"><svg viewBox=\"0 0 20 20\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M4 10a6 6 0 1 0 1.8-4.3M4 3v3.5h3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Play again</button>",
+      "css": ".ds-replay { display: inline-flex; align-items: center; gap: 7px; padding: 8px 14px; border: 0; border-radius: 999px; background: #f1ebe2; color: #1d1b19; font: 700 0.9375rem/1 ui-rounded, 'SF Pro Rounded', 'Nunito Var', system-ui, sans-serif; cursor: pointer; transition: background-color 150ms; } .ds-replay:hover { background: #e4dbcd; } .ds-replay:active { transform: translateY(1px); } .ds-replay:focus-visible { outline: 3px solid #1f6feb; outline-offset: 3px; }"
+    },
+    {
+      "name": "Demo Steps",
+      "kind": "custom",
+      "refersTo": "coral",
+      "description": "Numbered steps that follow the hero demo; the active step's disc turns coral.",
+      "html": "<ol class=\"ds-demo-steps\"><li>Click a link in any app.</li><li class=\"is-active\">A little Safari window pops up, right here.</li><li>Worth keeping? Send it to your main Safari window.</li></ol>",
+      "css": ".ds-demo-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; counter-reset: demo; } .ds-demo-steps li { counter-increment: demo; display: grid; grid-template-columns: 26px 1fr; gap: 10px; align-items: center; font: 700 1rem/1.3 ui-rounded, 'SF Pro Rounded', 'Nunito Var', system-ui, sans-serif; color: #1d1b19; opacity: 0.45; transition: opacity 250ms; } .ds-demo-steps li.is-active { opacity: 1; } .ds-demo-steps li::before { content: counter(demo); display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: #f1ebe2; color: #5a524a; font: 800 0.8125rem/1 ui-rounded, 'SF Pro Rounded', 'Nunito Var', system-ui, sans-serif; transition: background-color 250ms, color 250ms; } .ds-demo-steps li.is-active::before { background: #e7563a; color: #1d1b19; }"
+    },
+    {
+      "name": "Toast",
+      "kind": "chip",
+      "refersTo": "toast",
+      "description": "Ink status pill confirming a demo action.",
+      "html": "<p class=\"ds-toast\">Sent to your main Safari window</p>",
+      "css": ".ds-toast { display: inline-block; margin: 0; padding: 8px 12px; border-radius: 999px; background: #1d1b19; color: #fff; font: 700 0.75rem/1 ui-rounded, 'SF Pro Rounded', 'Nunito Var', system-ui, sans-serif; animation: ds-toast-in 400ms cubic-bezier(0.16, 1, 0.3, 1) both; } @keyframes ds-toast-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }"
+    },
+    {
+      "name": "Spread",
+      "kind": "card",
+      "refersTo": "spread",
+      "description": "Open two-page card-stock spread with gutter shading, lying on the coral board.",
+      "html": "<div class=\"ds-board\"><div class=\"ds-spread\"><div class=\"ds-page\"><h2 class=\"ds-h2\">Stay on your Space.</h2></div><div class=\"ds-page\"></div></div></div>",
+      "css": ".ds-board { background: #e7563a; padding: 32px 16px; } .ds-spread { position: relative; display: grid; grid-template-columns: 1fr 1fr; background: #fffdf9; border-radius: 12px; box-shadow: 0 1px 1px rgb(72 26 12 / 0.08), 0 14px 28px -12px rgb(72 26 12 / 0.35); } .ds-spread::before { content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; background: linear-gradient(90deg, transparent 0 44%, rgb(72 26 12 / 0.035) 47%, rgb(72 26 12 / 0.11) 49.6%, rgb(255 255 255 / 0.7) 50.1%, rgb(72 26 12 / 0.05) 51.5%, transparent 56%); } .ds-page { padding: clamp(24px, 4.2vw, 60px); min-height: 120px; } .ds-h2 { margin: 0; font: 800 clamp(2.1rem, 3.6vw, 3.1rem)/1.02 ui-rounded, 'SF Pro Rounded', 'Nunito Var', system-ui, sans-serif; letter-spacing: -0.03em; color: #1d1b19; }"
+    },
+    {
+      "name": "Lift-Flap",
+      "kind": "custom",
+      "refersTo": "flap-front",
+      "description": "Card-stock lid hinged at the top over a recessed answer.",
+      "html": "<button class=\"ds-flap\" aria-expanded=\"false\" onclick=\"this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') !== 'true')\"><span class=\"ds-flap-back\"><b>Cmd O:</b> move the page to your main Safari window.</span><span class=\"ds-flap-lid\"><span class=\"ds-flap-front\">Cmd O</span><span class=\"ds-flap-under\">Cmd O</span></span></button>",
+      "css": ".ds-flap { position: relative; display: block; width: 260px; min-height: 132px; padding: 0; border: 0; border-radius: 8px; background: #f1ebe2; box-shadow: inset 0 2px 6px rgb(72 26 12 / 0.12); color: #1d1b19; text-align: left; cursor: pointer; perspective: 700px; font: inherit; } .ds-flap-back { display: block; padding: 16px 18px 18px; font: 400 0.9375rem/1.45 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; } .ds-flap-lid { position: absolute; inset: 0; transform-style: preserve-3d; transform-origin: 50% 0; transition: transform 750ms cubic-bezier(0.2, 0.9, 0.25, 1); } .ds-flap-front, .ds-flap-under { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; border-radius: 8px; font: 800 1.25rem/1 ui-rounded, 'SF Pro Rounded', 'Nunito Var', system-ui, sans-serif; backface-visibility: hidden; } .ds-flap-front { background: #fffdf9; box-shadow: 0 1px 1px rgb(72 26 12 / 0.1), 0 8px 14px -8px rgb(72 26 12 / 0.45); } .ds-flap-front::before { content: ''; position: absolute; inset: 7px 10px auto; border-top: 1.5px dashed #e3d9cb; } .ds-flap-under { background: #e9e0d3; color: #5a524a; transform: rotateX(180deg); } .ds-flap:hover .ds-flap-lid { transform: rotateX(-14deg); } .ds-flap[aria-expanded=\"true\"] .ds-flap-lid { transform: rotateX(-150deg); } .ds-flap:focus-visible { outline: 3px solid #1f6feb; outline-offset: 4px; }"
+    },
+    {
+      "name": "Install Step",
+      "kind": "input",
+      "refersTo": "coral",
+      "description": "Numbered checklist row with a coral check box.",
+      "html": "<ol class=\"ds-steps\"><li><label><input type=\"checkbox\"><span class=\"ds-box\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M3.5 8.5l3 3 6-7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span><span><b>Open it.</b> Click Open Anyway.</span></label></li></ol>",
+      "css": ".ds-steps { list-style: none; margin: 0; padding: 0; counter-reset: step; font: 400 1.125rem/1.55 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; color: #1d1b19; } .ds-steps li { counter-increment: step; border-top: 1px solid #eee6da; border-bottom: 1px solid #eee6da; } .ds-steps label { display: grid; grid-template-columns: 2.2rem 28px 1fr; gap: 12px; align-items: start; padding: 14px 4px; cursor: pointer; } .ds-steps label::before { content: counter(step); font: 800 1.375rem/1.2 ui-rounded, 'SF Pro Rounded', 'Nunito Var', system-ui, sans-serif; color: #c9432a; } .ds-steps input { position: absolute; opacity: 0; } .ds-box { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 8px; border: 1.5px solid #d4c9ba; background: #fffdf9; color: #fff; transition: background-color 150ms, border-color 150ms; } .ds-box svg { width: 16px; height: 16px; transform: scale(0.4); opacity: 0; transition: transform 300ms cubic-bezier(0.2, 0.9, 0.25, 1), opacity 150ms; } .ds-steps label:hover .ds-box { border-color: #c9432a; } .ds-steps input:checked + .ds-box { background: #e7563a; border-color: #e7563a; } .ds-steps input:checked + .ds-box svg { transform: scale(1); opacity: 1; } .ds-steps input:checked ~ span:last-child { color: #5a524a; } .ds-steps input:focus-visible + .ds-box { outline: 3px solid #1f6feb; outline-offset: 2px; }"
+    },
+    {
+      "name": "Sticky Note",
+      "kind": "card",
+      "refersTo": "sticky-note",
+      "description": "One honest caveat per spread, slapped on at an angle.",
+      "html": "<aside class=\"ds-note\"><p><b>One quirk:</b> Safari turns Allow unsigned extensions off every time it quits.</p></aside>",
+      "css": ".ds-note { background: #ffe48f; padding: 18px 22px; border-radius: 4px; transform: rotate(-1.2deg); box-shadow: 0 10px 18px -12px rgb(72 26 12 / 0.6); max-width: 440px; } .ds-note p { margin: 0; color: #3b3112; font: 400 1.125rem/1.55 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Pop-Up Book",
+    "overview": "The whole site is one pop-up book. A drenched coral cover board is the ground. Every chapter is an open two-page spread of warm white card stock lying on it, with a gutter fold down the middle and a stack of pages showing underneath. Demos are pasted onto the pages as little Mac screens, and the little Safari window stands up off them on a crease and two glue tabs, the same spring the app performs. Controls are paper mechanics: lift-flaps hinged at the top, check boxes you tick, a sticky note slapped on at an angle.\n\nDensity is relaxed and bookish: one idea per spread, a heading and a short paragraph on the left page, the thing that moves on the right. The signature is demonstration rather than claims. The hero plays the whole flow once on load (click a link, the window pops up, send it to Safari), with numbered steps lighting up under it. The Spaces chapter runs a side-by-side Without/With comparison when it scrolls into view. Depth is physical, made with warm-tinted cast shadows and fold shading, never glow or glass. Motion follows one grammar: things hinge on a scored edge and spring past their rest angle before settling. The single sanctioned slide is the macOS Space switch.",
+    "keyCharacteristics": [
+      "Coral cover board as the page ground; white card-stock spreads carry all content.",
+      "Two-page spreads with a shaded gutter; they collapse to a single page under 820px.",
+      "Rounded display type (SF Rounded, Nunito fallback) at weight 800 with tight tracking, over SF body text.",
+      "Demos are pasted mini Mac screens that autoplay once and offer a quiet Play again pill.",
+      "Shadows on paper are tinted with the coral's own brown (rgb 72 26 12), never neutral grey.",
+      "Hinge-and-spring motion with an overshoot; reduced motion collapses it to an instant change."
+    ],
+    "rules": [
+      {
+        "name": "The Blue Is a Link Rule",
+        "body": "Safari Blue only marks text you can follow (or the link being clicked in a demo) and the focus ring on paper. Buttons, including both Download for Mac buttons, are Ink. A blue button is drift.",
+        "section": "colors"
+      },
+      {
+        "name": "The Board Is Not Paper Rule",
+        "body": "Content lives on Card Stock. The only things set straight on the coral board are the nav, the white display headline and the colophon.",
+        "section": "colors"
+      },
+      {
+        "name": "The Warm Shadow Rule",
+        "body": "Every shadow on paper uses the coral-brown tint (rgb 72 26 12) at varying alpha. Neutral black shadows belong only inside the faux macOS scenery (app windows, the pill, the cursor), because they copy the real OS.",
+        "section": "colors"
+      },
+      {
+        "name": "The Rounded Voice Rule",
+        "body": "Everything that is a heading, a button, a label or a paper mechanism is set in the rounded display face at 700 to 900. Running text is never rounded.",
+        "section": "typography"
+      },
+      {
+        "name": "The White Is Big Rule",
+        "body": "White text on coral is about 3.3:1, so it is used only at display size. Anything smaller on coral is Ink or Coral Ink.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hinge Rule",
+        "body": "Things that appear rotate on a scored edge. The window pops from rotateX(87deg) through -24deg to rest at rotateX(-10deg) over 1000ms, fading in during the first 12%. It leaves by folding flat to 87deg as it fades out. Flaps open on their top edge to rotateX(-150deg) and lean to -14deg on hover. Small nudges (a 1px button lift, the toast dropping 6px into place) and shadow fades that follow a fold are fine.",
+        "section": "elevation"
+      },
+      {
+        "name": "The One Slide Rule",
+        "body": "The only thing that slides is a Space switch, because it copies the macOS gesture: a three-Space track moves sideways over 900ms on cubic-bezier(0.65, 0, 0.35, 1). Nothing else slides in from offscreen.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do put every block of content on a Card Stock spread with the gutter shading and page stack beneath it.",
+      "Do make Download buttons Ink (#1d1b19) pills; keep Safari Blue (#1f6feb) for text links.",
+      "Do show the product by playing it in a pasted mini screen, once, with a Play again pill.",
+      "Do tint every shadow on paper with rgb(72 26 12).",
+      "Do move things on hinges with the spring curve cubic-bezier(0.2, 0.9, 0.25, 1) and a visible overshoot, and collapse it under prefers-reduced-motion.",
+      "Do set headings, buttons, labels and paper mechanisms in the rounded face at 700 to 900.",
+      "Do use dashed 1.5px warm lines for scores and creases."
+    ],
+    "donts": [
+      "Don't color a button blue.",
+      "Don't set small text in white on coral; use Ink or Coral Ink.",
+      "Don't slide anything in except a Space switch.",
+      "Don't use neutral grey or black shadows on paper; they belong only to the copied macOS scenery.",
+      "Don't show fake screenshots; demos are built in HTML and CSS and look like paper.",
+      "Don't add content to the coral back cover beyond the colophon."
+    ]
+  }
+}

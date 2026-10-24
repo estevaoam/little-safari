@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Little Safari: Little Arc, for Safari</title>
+  <meta name="description" content="Click a link in any app and a little Safari window pops up right where you are, on the Space you're on. Free and open source for macOS.">
+  <meta property="og:title" content="Little Safari: Little Arc, for Safari">
+  <meta property="og:description" content="Links from other apps open in a little Safari window on the Space you're on. Free and open source for macOS.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://estevaoam.github.io/little-safari/">
+  <meta name="theme-color" content="#e7563a">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/nunito-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg width="0" height="0" class="sprite" aria-hidden="true">
+    <symbol id="i-mark" viewBox="0 0 32 32">
+      <rect x="3" y="5" width="20" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="2.2"/>
+      <rect x="9" y="11" width="20" height="16" rx="4" fill="currentColor"/>
+      <circle cx="13" cy="15" r="1.3" fill="var(--mark-dot, #fff)"/>
+      <circle cx="17" cy="15" r="1.3" fill="var(--mark-dot, #fff)"/>
+    </symbol>
+    <symbol id="i-github" viewBox="0 0 16 16">
+      <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+    </symbol>
+    <symbol id="i-download" viewBox="0 0 20 20">
+      <path d="M10 3v10m0 0-4-4m4 4 4-4M4 16h12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-cursor" viewBox="0 0 24 24">
+      <path d="M5 3l14 8-6.2 1.6L9.7 19z" fill="#1d1b19" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-replay" viewBox="0 0 20 20">
+      <path d="M4 10a6 6 0 1 0 1.8-4.3M4 3.5v3.2h3.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 16 16">
+      <path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <header class="cover">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#top"><svg class="brand-mark" aria-hidden="true"><use href="#i-mark"/></svg>Little Safari</a>
+      <div class="nav-links">
+        <a href="#spaces">How it works</a>
+        <a href="#install">Install</a>
+        <a href="https://github.com/estevaoam/little-safari" class="nav-gh"><svg aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
+      </div>
+    </nav>
+
+    <h1 id="top" data-impeccable-ignore="low-contrast">Little Arc, <span class="nowrap">for Safari.</span></h1>
+
+    <div class="book hero-book">
+      <div class="spread" data-impeccable-ignore="cramped-padding">
+        <div class="page page-left">
+          <p class="lede">Links you click in Slack, Mail or any other app open in a little Safari window <strong>right where you are</strong>.</p>
+          <p class="lede-2">No more getting thrown to whichever desktop your Safari window lives on. Glance at the page, close it, or keep it with one click. It’s real Safari, with your logins, passwords and extensions.</p>
+          <div class="actions">
+            <a class="button button-ink" href="https://github.com/estevaoam/little-safari/releases/latest/download/LittleSafari.zip">
+              <svg aria-hidden="true"><use href="#i-download"/></svg>Download for Mac
+            </a>
+            <a class="button button-quiet" href="https://github.com/estevaoam/little-safari">
+              <svg aria-hidden="true"><use href="#i-github"/></svg>View on GitHub
+            </a>
+          </div>
+          <p class="meta">Version 0.1.0 · macOS 14 or later · Free and open source</p>
+        </div>
+
+        <div class="page page-right" data-impeccable-ignore="cramped-padding">
+          <div class="demo" data-demo>
+            <div class="screen" data-screen>
+              <div class="menubar" aria-hidden="true"><i></i><span>Chat</span><span>File</span><span>Edit</span><span>View</span></div>
+              <div class="app" aria-hidden="true">
+                <div class="app-side"><span class="chan is-on"># design-crit</span><span class="chan"># launches</span><span class="chan"># random</span></div>
+                <div class="app-main">
+                  <div class="chat-msg">
+                    <span class="avatar" style="--a:#0b7458">J</span>
+                    <div><p class="chat-name">Jon <span>10:41</span></p><p class="chat-text">Morning! Crit at 11?</p></div>
+                  </div>
+                  <div class="chat-msg">
+                    <span class="avatar" style="--a:#6547e6">M</span>
+                    <div><p class="chat-name">Maya <span>10:42</span></p><p class="chat-text">New onboarding is up, have a look: <span class="chat-link" data-link>github.com/<wbr>estevaoam/<wbr>little-safari</span></p></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popup" data-popup>
+                <div class="cast" aria-hidden="true"></div>
+                <span class="glue glue-l" aria-hidden="true"></span>
+                <span class="glue glue-r" aria-hidden="true"></span>
+                <figure class="win" data-impeccable-ignore="nested-cards" aria-label="A little Safari window showing the page from the link">
+                  <div class="win-bar">
+                    <span class="lights"><i></i><i></i><i></i></span>
+                    <span class="win-url">github.com/estevaoam/little-safari</span>
+                  </div>
+                  <div class="win-body" aria-hidden="true">
+                    <p class="win-title">Little Safari</p>
+                    <p>A Little Arc–style mini window for Safari.</p>
+                    <p>Free and open source, for macOS 14 or later.</p>
+                  </div>
+                  <span class="pill" data-pill>Open in Safari ↗ <kbd>⌘O</kbd></span>
+                </figure>
+              </div>
+
+              <p class="toast" data-toast aria-hidden="true">Sent to your main Safari window</p>
+              <svg class="cursor" data-cursor aria-hidden="true"><use href="#i-cursor"/></svg>
+            </div>
+
+            <ol class="demo-steps" data-steps-demo>
+              <li data-step="1">Click a link in any app.</li>
+              <li data-step="2">A little Safari window pops up, right here.</li>
+              <li data-step="3">Worth keeping? Send it to your main Safari window.</li>
+            </ol>
+            <button class="replay" type="button" data-replay>
+              <svg aria-hidden="true"><use href="#i-replay"/></svg>Play again
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="chapter" id="spaces" aria-labelledby="spaces-title">
+      <div class="book">
+        <div class="spread" data-impeccable-ignore="cramped-padding">
+          <div class="page page-left">
+            <h2 id="spaces-title">Stay on your Space.</h2>
+            <p>Say Safari lives on Space 1 and you’re working in Slack on Space 3. Click a link and macOS throws you over to Space 1, away from what you were doing.</p>
+            <p>With Little Safari, the page comes to you instead. It opens in a little window on Space 3, and when you’re done, you’re still where you were.</p>
+            <button class="replay" type="button" data-compare-replay>
+              <svg aria-hidden="true"><use href="#i-replay"/></svg>Play again
+            </button>
+          </div>
+          <div class="page page-right">
+            <div class="compares">
+              <figure class="compare compare-without" data-compare="without">
+                <figcaption class="compare-label">Without Little Safari</figcaption>
+                <div class="viewport" aria-hidden="true">
+                  <div class="track" data-track>
+                    <div class="desk desk-1"><span class="desk-name">Space 1</span><span class="big-safari"><b class="tag">Safari</b><i></i></span></div>
+                    <div class="desk desk-2"><span class="desk-name">Space 2</span><span class="notes"></span></div>
+                    <div class="desk desk-3"><span class="desk-name">Space 3</span><span class="mini-chat"><b class="tag tag-dark">Slack</b><b class="mini-link" data-mini-link></b></span>
+                    </div>
+                  </div>
+                  <svg class="cursor cursor-sm" data-cursor aria-hidden="true"><use href="#i-cursor"/></svg>
+                </div>
+                <div class="dots" aria-hidden="true"><i></i><i></i><i class="is-on"></i></div>
+                <p class="compare-caption" data-compare-caption>You’re on Space 3, in Slack.</p>
+              </figure>
+              <figure class="compare compare-with" data-compare="with">
+                <figcaption class="compare-label">With Little Safari</figcaption>
+                <div class="viewport" aria-hidden="true">
+                  <div class="track" data-track>
+                    <div class="desk desk-1"><span class="desk-name">Space 1</span><span class="big-safari"><b class="tag">Safari</b><i></i></span></div>
+                    <div class="desk desk-2"><span class="desk-name">Space 2</span><span class="notes"></span></div>
+                    <div class="desk desk-3"><span class="desk-name">Space 3</span><span class="mini-chat"><b class="tag tag-dark">Slack</b><b class="mini-link" data-mini-link></b></span>
+                  <span class="mini" aria-hidden="true"><i class="mini-bar"></i><i class="mini-lines"></i><b class="mini-pill"></b></span>
+                    </div>
+                  </div>
+                  <svg class="cursor cursor-sm" data-cursor aria-hidden="true"><use href="#i-cursor"/></svg>
+                </div>
+                <div class="dots" aria-hidden="true"><i></i><i></i><i class="is-on"></i></div>
+                <p class="compare-caption" data-compare-caption>You’re on Space 3, in Slack.</p>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="keep" aria-labelledby="keep-title">
+      <div class="book">
+        <div class="spread" data-impeccable-ignore="cramped-padding">
+          <div class="page page-left">
+            <h2 id="keep-title">Keep it, or let it go.</h2>
+            <p>The little window is a real Safari window, so Reader, AutoFill, passwords and your other extensions all work. When a page turns out to be worth keeping, send it to your main window. Lift a flap to see how.</p>
+          </div>
+          <div class="page page-right">
+            <ul class="flaps">
+              <li><button type="button" class="flap" aria-expanded="false" data-flap>
+                <span class="flap-back"><b><kbd>⌥</kbd> + click:</b> skip the little window. The link goes straight to your main Safari window.</span>
+                <span class="flap-lid"><span class="flap-front"><kbd>⌥</kbd> + click<i class="lip"></i></span><span class="flap-under"><kbd>⌥</kbd> + click</span></span>
+              </button></li>
+              <li><button type="button" class="flap" aria-expanded="false" data-flap>
+                <span class="flap-back"><b><kbd>⌘</kbd><kbd>O</kbd>:</b> move the page to the Safari window you used last, and close the little one.</span>
+                <span class="flap-lid"><span class="flap-front"><kbd>⌘</kbd><kbd>O</kbd><i class="lip"></i></span><span class="flap-under"><kbd>⌘</kbd><kbd>O</kbd></span></span>
+              </button></li>
+              <li><button type="button" class="flap" aria-expanded="false" data-flap>
+                <span class="flap-back"><b>The pill:</b> click “Open in Safari ↗” in the corner of the page. The toolbar button and <kbd>⌘</kbd><kbd>⇧</kbd><kbd>O</kbd> do the same.</span>
+                <span class="flap-lid"><span class="flap-front">The pill<i class="lip"></i></span><span class="flap-under">The pill</span></span>
+              </button></li>
+              <li><button type="button" class="flap" aria-expanded="false" data-flap>
+                <span class="flap-back"><b><kbd>⌘</kbd><kbd>W</kbd>:</b> done with it? Close it. Nothing else moved.</span>
+                <span class="flap-lid"><span class="flap-front"><kbd>⌘</kbd><kbd>W</kbd><i class="lip"></i></span><span class="flap-under"><kbd>⌘</kbd><kbd>W</kbd></span></span>
+              </button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="install" aria-labelledby="install-title">
+      <div class="book">
+        <div class="spread" data-impeccable-ignore="cramped-padding">
+          <div class="page page-left">
+            <h2 id="install-title">Set it up in a few minutes.</h2>
+            <p>This build isn’t signed by Apple (that takes a paid developer account), so macOS and Safari ask you to confirm a couple of things. Tick the steps off as you go.</p>
+            <aside class="note" data-impeccable-ignore="nested-cards">
+              <p><b>One quirk:</b> Safari turns “Allow unsigned extensions” off every time it quits. Links still open in little windows, but the Open in Safari button waits until you switch it back on.</p>
+            </aside>
+          </div>
+          <div class="page page-right">
+            <ol class="steps" data-steps>
+              <li><label><input type="checkbox"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Download and unzip</b> <a href="https://github.com/estevaoam/little-safari/releases/latest/download/LittleSafari.zip">LittleSafari.zip</a>, then move <b>Little Safari.app</b> to your Applications folder.</span></label></li>
+              <li><label><input type="checkbox"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Open it.</b> macOS will block it the first time. Go to System Settings → Privacy &amp; Security, scroll down and click <b>Open Anyway</b>.</span></label></li>
+              <li><label><input type="checkbox"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span><span>In Safari, go to Settings → Advanced and turn on <b>Show features for web developers</b>.</span></label></li>
+              <li><label><input type="checkbox"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span><span>In Settings → Developer, turn on <b>Allow unsigned extensions</b>.</span></label></li>
+              <li><label><input type="checkbox"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span><span>In Settings → Extensions, enable <b>Little Safari</b> and set it to <b>Always Allow on Every Website</b>.</span></label></li>
+              <li><label><input type="checkbox"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span><span>Back in the Little Safari window, click <b>Make Default</b> and confirm.</span></label></li>
+              <li><label><input type="checkbox"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span><span>Click <b>Try It</b>. When macOS asks whether Little Safari may control Safari, click <b>Allow</b>.</span></label></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="fine-print" aria-labelledby="fine-title">
+      <div class="book">
+        <div class="spread" data-impeccable-ignore="cramped-padding">
+          <div class="page page-left">
+            <h2 id="fine-title">The fine print</h2>
+            <ul class="fine">
+              <li><b>No floating over full-screen apps.</b> macOS doesn’t let one app raise another app’s windows, so the little window opens on a regular desktop.</li>
+              <li><b>Moving a page reloads it.</b> Safari extensions can’t move tabs between windows, so anything typed into a form stays behind.</li>
+              <li><b>Changed your mind?</b> Click Restore Safari as Default in the Little Safari window, then delete the app.</li>
+            </ul>
+          </div>
+          <div class="page page-right page-close">
+            <p class="close-line">Pop one open.</p>
+            <div class="mini-stage" aria-hidden="true">
+              <span class="mini mini-close" data-close-pop><i class="mini-bar"></i><span class="mini-body"><span class="mini-title">You’re still here.</span><span class="mini-text">Same Space, same desk. The page came to you.</span></span><span class="pill mini-close-pill">Open in Safari ↗</span></span>
+              <span class="crease"></span>
+            </div>
+            <a class="button button-ink" href="https://github.com/estevaoam/little-safari/releases/latest/download/LittleSafari.zip">
+              <svg aria-hidden="true"><use href="#i-download"/></svg>Download for Mac
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="back-cover">
+    <p class="colophon">
+      Little Safari 0.1.0, released October 24, 2026 · <a href="https://github.com/estevaoam/little-safari/blob/main/LICENSE">MIT License</a> · <a href="https://github.com/estevaoam/little-safari">Source on GitHub</a><br>
+      An independent project, not affiliated with Apple or The Browser Company. Safari is a trademark of Apple Inc.
+    </p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
