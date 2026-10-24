@@ -41,6 +41,16 @@
         ],
         "createdAt": "2026-10-24T16:38:55.575Z",
         "reason": "Claude: the only nested containers are the little Safari window standing on the hero page and the sticky note on the install page, both part of the pop-up paper world; verified in renders"
+      },
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "docs/index.html",
+          "docs/style.css"
+        ],
+        "createdAt": "2026-10-24T17:07:31.952Z",
+        "reason": "User chose the warm gradient headline (option 1) explicitly"
       }
     ]
   }

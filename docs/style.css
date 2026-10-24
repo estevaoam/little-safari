@@ -133,10 +133,16 @@ h1 {
   max-width: 1180px;
   margin: clamp(28px, 6vw, 72px) auto clamp(28px, 4vw, 52px);
   color: #fff;
+  background: linear-gradient(100deg, #fff 0%, #ffe9dc 45%, var(--note) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: clamp(3.1rem, 8.6vw, 6rem);
   line-height: 0.95;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.01em;
 }
+/* SF Pro Rounded fuses the crossbars of "tt" at display sizes. */
+h1 .t2 { margin-left: 0.045em; }
 
 /* ---------- The book ---------- */
 
